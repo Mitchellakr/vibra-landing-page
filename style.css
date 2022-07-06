@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* this are my utilities */
+
+:root {
+    --body-color: #141414;
+    --primaar-color: #2568FC;
+    --primary-color-2: #1f4fb9;
+    --gray: #9d9d9d;
+    --white: #fafafa;
+}
+
+.primary-btn {
+    padding: 1em;
+    border-radius: 6px;
+    color: var(--white);
+    background-color: var(--primaar-color);
+    transition: all .5s ease;
+}
+
+.primary-btn-2 {
+    padding: 1em;
+    border-radius: 6px;
+    color: var(--white);
+    background-color: var(--primary-color-2);
+    transition: all .5s ease;
+}
+
+.primary-btn:hover {
+    opacity: .8;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--body-color);
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* this is the header section styling */
+
+.landing-section {
+    background-image: url(./images/Hero-bg.png);
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.3em;
+}
+
+a {
+    color: var(--gray);
+}
+
+.nav-active {
+    color: var(--white);
+    font-weight: 500;
+}
+
+.active {
+    color: var(--white);
+    font-weight: 500;
+}
+
+/* this is the hero section styling */
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    padding: 4em 0 0;
+}
+
+.hero-section h1 {
+    font-size: 5em;
+    color: var(--white);
+    text-align: center;
+    font-weight: 700;
+}
+
+.buttons {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.secondary-btn {
+    gap: .5em;
+    display: flex;
+    align-items: center;
+}
+
+/* this is the take charge section styling */
+
+.charge-section {
+    background-image: url(./images/Take-charge-bg.png);
+    padding: 6em 0;
+}
+
+.charge-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10em;
+}
+
+.charge-content h2 {
+    text-align: center;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.steps {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    color: var(--white);
+}
+
+.num {
+    background-color: var(--primaar-color);
+    padding: .4em .8em;
+    border-radius: 50%;
+    outline: 2px solid var(--primaar-color);
+    outline-offset: 1em;
+}
+
+.step-text {
+    font-weight: 500;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7em;
+}
+
+/* this is the download section stlying */
+
+.vibra {
+    padding-top: 7em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: url(./images/Download-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.vibra-copy {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 4em;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.vibra-copy h2 {
+    font-size: 3em;
+}
+
+/* this is the news section styling */
+
+.top-news-section {
+    background-image: url(./images/news-bg.png);
+    background-repeat: no-repeat;
+}
+
+.news-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+    padding: 4em 0;
+}
+
+.news-section h2 {
+    color: var(--white);
+}
+
+.news-nav {
+    display: flex;
+    gap: 2em;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-copy {
+    background-color: var(--primaar-color);
+    color: var(--white);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 0 0 8px 8px;
+}
+
+.card-copy a {
+    color: var(--white);
+}
+
+/* this is the footer section styling */
+
+footer{
+    padding: 7em 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.sites {
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.site ul {
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+}

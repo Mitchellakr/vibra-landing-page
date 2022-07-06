@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;700&display=swap');
 
-* {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -104,6 +106,7 @@ a {
     font-weight: 700;
 }
 
+
 .buttons {
     display: flex;
     gap: 1em;
@@ -128,6 +131,27 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 10em;
+    position: relative;
+}
+
+
+.ellipse {
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+}
+
+.ellipse1 {
+    width: 60px;
+    left: 60px;
+    top: 250px;
+    position: absolute;
+}
+
+.ellipse2 {
+    position: absolute;
+    right: 50px;
+    top: 150px;
 }
 
 .charge-content h2 {
@@ -159,7 +183,10 @@ a {
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 7em;
+    gap: 2em;
+}
+.grid img {
+    padding-left: 1em;
 }
 
 /* this is the download section stlying */
@@ -243,7 +270,7 @@ a {
 
 /* this is the footer section styling */
 
-footer{
+footer {
     padding: 7em 0;
 }
 

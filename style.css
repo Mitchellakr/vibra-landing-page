@@ -46,6 +46,7 @@
 
 .menu {
     z-index: 999;
+    cursor: pointer;
     transition: all 1s ease-in-out;
 }
 
@@ -330,6 +331,10 @@ a:hover {
     flex-direction: column;
 }
 
+.card h2 {
+    font-size: 2em;
+}
+
 .card-copy {
     background-color: var(--primaar-color);
     color: var(--white);
@@ -513,9 +518,8 @@ footer {
     }
 
     .buttons {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
     }
 }

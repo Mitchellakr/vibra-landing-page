@@ -404,6 +404,15 @@ footer {
 }
 
 @media only screen and (max-width:850px) {
+
+    .container {
+        width: 90%
+    }
+
+    .wrapper {
+        width: 85%;
+    }
+
     .sites {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -435,6 +444,7 @@ footer {
     .vibra-copy {
         align-items: center;
         padding-left: 0;
+        text-align: center;
 
     }
 
@@ -521,5 +531,9 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 1.5em;
+    }
+
+    h1 {
+        font-size: 1.5em;
     }
 }

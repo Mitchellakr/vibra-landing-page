@@ -248,6 +248,9 @@ a:hover {
     border-radius: 50%;
     outline: 2px solid var(--primaar-color);
     outline-offset: 1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .step-text {
